@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:3.3.13
+FROM rundeck/rundeck:3.4.3
 
 MAINTAINER oredin <frederic.caillet@russandol.eu>
 
