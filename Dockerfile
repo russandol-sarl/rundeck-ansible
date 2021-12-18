@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:3.4.3
+FROM rundeck/rundeck:3.4.8
 
 MAINTAINER oredin <frederic.caillet@russandol.eu>
 
@@ -10,6 +10,6 @@ ENV PATH=${PATH}:${RDECK_BASE}/tools/bin
 RUN sudo apt-get -y update \
   && sudo apt-get -y --no-install-recommends install ca-certificates python3-pip sshpass \
   && sudo -H pip3 --no-cache-dir install --upgrade pip setuptools \
-  && sudo -H pip3 --no-cache-dir install ansible==2.9.24 \
+  && sudo -H pip3 --no-cache-dir install ansible==5.0.1 \
   && sudo rm -rf /var/lib/apt/lists/* \
   && sudo mkdir /etc/ansible
