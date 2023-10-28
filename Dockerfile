@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:4.16.0
+FROM rundeck/rundeck:4.17.1
 
 MAINTAINER oredin <frederic.caillet@russandol.eu>
 
